@@ -1,0 +1,17 @@
+{
+  "name": "nodo-a",
+  "version": "1.0.0",
+  "description": "Node A - Message initiator",
+  "main": "nodoA.js",
+  "scripts": {
+    "start": "node nodoA.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "uuid": "^9.0.0"
+  }
+}

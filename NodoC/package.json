@@ -1,0 +1,15 @@
+{
+  "name": "nodo-c",
+  "version": "1.0.0",
+  "description": "Node C - Message verifier",
+  "main": "nodoC.js",
+  "scripts": {
+    "start": "node nodoC.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

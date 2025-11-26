@@ -1,0 +1,16 @@
+{
+  "name": "nodo-b",
+  "version": "1.0.0",
+  "description": "Node B - Message processor",
+  "main": "nodoB.js",
+  "scripts": {
+    "start": "node nodoB.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0"
+  }
+}
