@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-// CORS
+
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
@@ -23,7 +23,7 @@ app.post('/verificar', async (req, res) => {
     mensaje.power_level -= 5;
 
     
-    mensaje.audit_trail.push('C_verified');
+    mensaje.audit_trail.push('C-verificado');
 
     
     res.json(mensaje);

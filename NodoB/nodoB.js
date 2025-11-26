@@ -4,7 +4,6 @@ const app = express();
 
 app.use(express.json());
 
-// CORS
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
@@ -30,7 +29,7 @@ app.post('/procesar', async (req, res) => {
     }
 
     
-    mensaje.audit_trail.push('B_processed');
+    mensaje.audit_trail.push('B-procesado');
 
   
     const response = await axios.post('http://nodo-c:4000/verificar', mensaje);
