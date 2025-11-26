@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  nodo-a:
+    build: ./nodo-a
+    ports:
+      - "2000:2000"
+
+  nodo-b:
+    build: ./nodo-b
+    ports:
+      - "3000:3000"
+    depends_on:
+      - nodo-a
+  nodo-c:
+    build: ./nodo-c
+    ports:
+      - "4000:4000"
+    depends_on:
+      - nodo-b
+      
