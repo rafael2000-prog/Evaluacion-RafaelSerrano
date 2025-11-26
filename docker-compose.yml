@@ -1,19 +1,22 @@
-version: '3.8'
 services:
-  nodoA:
+  nodo-a:
     build: ./nodoA
     ports:
       - "2000:2000"
+    container_name: nodo-a
 
-  nodoB:
+  nodo-b:
     build: ./nodoB
     ports:
       - "3000:3000"
     depends_on:
-      - nodoA
-  nodoC:
+      - nodo-a
+    container_name: nodo-b
+
+  nodo-c:
     build: ./nodoC
     ports:
       - "4000:4000"
     depends_on:
-      - nodoB
+      - nodo-b
+    container_name: nodo-c
